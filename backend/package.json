@@ -1,9 +1,13 @@
 {
   "name": "backend",
   "scripts": {
+    "generate": "npx prisma generate",
     "dev": "wrangler dev",
     "deploy": "wrangler deploy --minify",
     "cf-typegen": "wrangler types --env-interface CloudflareBindings"
+  },
+  "prisma": {
+    "schema": "prisma/schema.prisma"
   },
   "dependencies": {
     "@aayushpatil/medium-common": "^1.0.0",
